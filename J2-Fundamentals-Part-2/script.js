@@ -1,6 +1,6 @@
 'use strict';
 
-/*
+
 ///////////////////////////////////////
 // Activating Strict Mode
 let hasDriversLicense = false;
@@ -95,22 +95,21 @@ const calcAge = function (birthYeah) {
   return 2037 - birthYeah;
 }
 
-const yearsUntilRetirement = function (birthYeah, firstName) {
-  const age = calcAge(birthYeah);
-  const retirement = 65 - age;
+// yearsUntilRetirement = function (birthYeah, firstName) {
+//   const age = calcAge(birthYeah);
+//   const retirement = 65 - age;
 
-  if (retirement > 0) {
-    console.log(`${firstName} retires in ${retirement} years`);
-    return retirement;
-  } else {
-    console.log(`${firstName} has already retired 🎉`);
-    return -1;
-  }
-}
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement} years`);
+//     return retirement;
+//   } else {
+//     console.log(`${firstName} has already retired 🎉`);
+//     return -1;
+//   }
+// }
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
-*/
 
 ///////////////////////////////////////
 // Coding Challenge #1
@@ -135,33 +134,33 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 GOOD LUCK 😀
 */
 
-/*
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(3, 4, 5));
 
-// Test 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
+// calcAverage = (a, b, c) => (a + b + c) / 3;
+// console.log(calcAverage(3, 4, 5));
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
-  } else {
-    console.log('No team wins...');
-  }
-}
-checkWinner(scoreDolphins, scoreKoalas);
+// // Test 1
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolphins, scoreKoalas);
 
-checkWinner(576, 111);
+//  checkWinner = function (avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
+//   } else {
+//     console.log('No team wins...');
+//   }
+// }
+// checkWinner(scoreDolphins, scoreKoalas);
 
-// Test 2
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
-console.log(scoreDolphins, scoreKoalas);
-checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(576, 111);
+
+// // Test 2
+// scoreDolphins = calcAverage(85, 54, 41);
+// scoreKoalas = calcAverage(23, 34, 27);
+// console.log(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 
 
 ///////////////////////////////////////
@@ -191,53 +190,53 @@ console.log(jonas);
 console.log(jonas.length);
 
 // Exercise
-const calcAge = function (birthYeah) {
-  return 2037 - birthYeah;
-}
-const years = [1990, 1967, 2002, 2010, 2018];
+//  calcAge = function (birthYeah) {
+//   return 2037 - birthYeah;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
 
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
+//  age1 = calcAge(years[0]);
+//  age2 = calcAge(years[1]);
+//  age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
 
-const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
-console.log(ages);
+// const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+// console.log(ages);
 
 
 ///////////////////////////////////////
 // Basic Array Operations (Methods)
-const friends = ['Michael', 'Steven', 'Peter'];
+// friends = ['Michael', 'Steven', 'Peter'];
 
-// Add elements
-const newLength = friends.push('Jay');
-console.log(friends);
-console.log(newLength);
+// // Add elements
+// const newLength = friends.push('Jay');
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift('John');
-console.log(friends);
+// friends.unshift('John');
+// console.log(friends);
 
-// Remove elements
-friends.pop(); // Last
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+// // Remove elements
+// friends.pop(); // Last
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
 
-friends.shift(); // First
-console.log(friends);
+// friends.shift(); // First
+// console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob'));
 
-friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes(23));
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+// console.log(friends.includes(23));
 
-if (friends.includes('Steven')) {
-  console.log('You have a friend called Steven');
-}
-*/
+// if (friends.includes('Steven')) {
+//   console.log('You have a friend called Steven');
+// }
+
 
 ///////////////////////////////////////
 // Coding Challenge #2
@@ -257,17 +256,17 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
-/*
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+//  calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+// // const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-console.log(bills, tips, totals);
+//  bills = [125, 555, 44];
+//  tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+//  totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills, tips, totals);
 
 
 ///////////////////////////////////////
@@ -280,24 +279,24 @@ const jonasArray = [
   ['Michael', 'Peter', 'Steven']
 ];
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
-};
+//  jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   age: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven']
+// };
 
 
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
-};
+//  jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   age: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven']
+// };
 console.log(jonas);
 
 console.log(jonas.lastName);
@@ -323,49 +322,49 @@ console.log(jonas);
 
 // Challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
 
 ///////////////////////////////////////
 // Object Methods
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  birthYeah: 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
-  hasDriversLicense: true,
+// jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   birthYeah: 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+//   hasDriversLicense: true,
 
-  // calcAge: function (birthYeah) {
-  //   return 2037 - birthYeah;
-  // }
+//   // calcAge: function (birthYeah) {
+//   //   return 2037 - birthYeah;
+//   // }
 
-  // calcAge: function () {
-  //   // console.log(this);
-  //   return 2037 - this.birthYeah;
-  // }
+//   // calcAge: function () {
+//   //   // console.log(this);
+//   //   return 2037 - this.birthYeah;
+//   // }
 
-  calcAge: function () {
-    this.age = 2037 - this.birthYeah;
-    return this.age;
-  },
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYeah;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-  }
-};
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//   }
+// };
 
-console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
 
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 
-// Challenge
-// "Jonas is a 46-year old teacher, and he has a driver's license"
-console.log(jonas.getSummary());
-*/
+// // Challenge
+// // "Jonas is a 46-year old teacher, and he has a driver's license"
+// console.log(jonas.getSummary());
+
 
 ///////////////////////////////////////
 // Coding Challenge #3
@@ -382,7 +381,7 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-/*
+
 const mark = {
   fullName: 'Mark Miller',
   mass: 78,
@@ -439,14 +438,14 @@ for (let rep = 1; rep <= 30; rep++) {
 
 ///////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
-];
+//  jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   true
+// ];
 const types = [];
 
 // console.log(jonas[0])
@@ -468,7 +467,7 @@ console.log(types);
 
 const years = [1991, 2007, 1969, 2020];
 const ages = [];
-
+// 
 for (let i = 0; i < years.length; i++) {
   ages.push(2037 - years[i]);
 }
@@ -492,14 +491,14 @@ for (let i = 0; i < jonas.length; i++) {
 
 ///////////////////////////////////////
 // Looping Backwards and Loops in Loops
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
-];
+//  jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   true
+// ];
 
 // 0, 1, ..., 4
 // 4, 3, ..., 0
@@ -528,7 +527,6 @@ while (rep <= 10) {
   // console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
   rep++;
 }
-
 let dice = Math.trunc(Math.random() * 6) + 1;
 
 while (dice !== 6) {
@@ -536,7 +534,7 @@ while (dice !== 6) {
   dice = Math.trunc(Math.random() * 6) + 1;
   if (dice === 6) console.log('Loop is about to end...');
 }
-*/
+
 
 ///////////////////////////////////////
 // Coding Challenge #4
@@ -560,7 +558,7 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
 GOOD LUCK 😀
 */
 
-/*
+
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
@@ -586,22 +584,244 @@ const calcAverage = function (arr) {
 console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
-*/
-
-function calcluateAge(age){
-  return 2022-age;
+// sample function
+function calcluateAge(birthyear){
+  return `sample funtion age ${2022-birthyear}`;
 }
 
-let age=calcluateAge(23);
+const age=calcluateAge(1991);
 console.log(age)
 
-age = function (age){
-  return 2022-age;
-}
-console.log(age(23))
+//expression function and function store in variable
 
-age = (age, name)=>{
-  age = 2022 - age;
-  return `${age}, name ${name}`
+const age_expression_function = function (birthyear){
+  return `expression function ${2022-birthyear}`;
 }
-console.log(age(23,'ayaz'))
+console.log(age_expression_function(1991))
+
+//arrow function
+const age_arrow_with_single = birthyear => {
+  return `arrow funtion ${2022-birthyear}`;
+}
+console.log(age_arrow_with_single(1991))
+
+//arrow funtion with multiple parameters
+
+const age_arrow = (birthyear, name) => {
+  return `arrow function with multiple value age : ${2022-birthyear} of ${name}`;
+}
+console.log(age_arrow(1991,'ayaz'))
+
+// function inside function
+
+const age_inside_funtion = function (birthyear){
+  return `arrow funtion calling from inside expression function ${age_arrow(birthyear, 'ayaz')}`;
+
+}
+console.log(age_inside_funtion(1991))
+
+const calcluateAgeEmployee = function (birthyear){
+  return 2022-birthyear;
+}
+
+const yearsRetirement = function (birthyear, name){
+  const age = calcluateAgeEmployee(birthyear);
+  const ret_age = 60-age
+  if (ret_age > 0){
+    return `${name} has ${ret_age} years left to retire`;
+  }
+  else{
+    console.log(`${name} has retired`);
+    return -1;
+  }
+}
+
+console.log(yearsRetirement(1995,'ayaz'))
+console.log(yearsRetirement(1950,'shah'))
+
+// challenge
+// Create a arrow function 'calcAverage' to calculate the average of 3 scores
+
+const average = (firstnumer, secondnumber, thirdnumber) => (firstnumer + secondnumber + thirdnumber)/3;
+
+console.log(average(2,3,4));
+
+let averagescoreDolphins = average(44, 23, 71);
+let averagescorekoalas = average(1, 5, 4);
+
+const checkWinner = function(averagescorekoalas, averagescoreDolphins){
+  if (averagescoreDolphins>=averagescorekoalas*2){
+    return `Dolphins win with ${averagescoreDolphins} vs ${averagescorekoalas}`;
+  }
+  else if (averagescorekoalas>=averagescoreDolphins*2){
+    return `koalas win with ${averagescorekoalas} vs ${averagescoreDolphins}`;
+  }
+  else{
+    return `match draw`
+  }
+}
+console.log(checkWinner(averagescorekoalas,averagescoreDolphins));
+
+// Array in javascript
+
+const arr = ['12',434,'Hello']
+console.log(arr)
+console.log(arr[arr.length-1])
+console.log('length of array is ',arr.length)
+
+// add value in array
+arr[0]='hy'
+console.log('new array',arr)
+
+//using push method to add value in last
+arr.push('new value')
+console.log('new array',arr)
+// push method return new length of array
+const length=arr.push('2nd new value');
+console.log('new length of array'+length);
+
+// remove element from array from last
+arr.pop()
+console.log('remove value from last ',arr)
+const poped_value = arr.pop()
+console.log('value which has been removed '+poped_value)
+
+// add value in starting index
+
+const new_length = arr.unshift('new value at first index')
+console.log('add value in starting index',arr)
+console.log('new length of array'+new_length);
+
+// remove value from Starting
+console.log('completed array ',arr)
+arr.shift()
+console.log('remove value from starting index: ' ,arr)
+const shiftedvalue = arr.shift()
+console.log('value which has been removed from starting '+shiftedvalue)
+
+//find the index of value
+console.log('index of value ',arr.indexOf('Hello'))
+
+// check if value inside array or not
+console.log('check if value inside array or not ',arr.includes('Hello'))
+console.log('check if value inside array or not',arr.includes('HY'))
+
+// object in javascript
+
+const ayazArray = [
+  'ayaz',
+  'khan',
+  2022-1995,
+  'developer',
+  ['nouman','junaid','wajid']
+]
+
+
+const ayaz = {
+  firstName: 'Ayaz',
+  lastName: 'Khan',
+  birthyear: 1995,
+  job: 'developer',
+  friends: ['nouman','junaid','wajid'],
+  // calcAge: function(birthyear){
+  //   return 2022-birthyear
+  // }
+  // calcAge: function (){
+  //   console.log(this)
+  //   return 2022-ayaz.birthyear
+  // } 
+//  calcAge: function (){
+//     console.log(this)
+//     return 2022-this.birthyear
+//   } 
+calcAge: function (){
+      console.log(this)
+      this.age=2022-this.birthyear
+      return this.age
+    } 
+
+}
+
+console.log(ayaz)
+console.log(ayaz.firstName)
+console.log(ayaz.lastName)
+
+console.log(ayaz['firstName'])
+console.log(ayaz['lastName'])
+
+console.log(ayaz['first'+'Name'])
+console.log(ayaz['last'+'Name'])
+
+// const interestedIn = prompt('What do you want to know about Ayaz? Choose between firstName, lastName, age, job, and friends');
+// if (ayaz[interestedIn]){
+// console.log(ayaz[interestedIn])
+// } else{
+//   console.log('Wrong request')
+// }
+
+ayaz.location = 'Islamabad'
+ayaz['gmail']='ayaz@gmail.com'
+console.log(ayaz)
+
+console.log('ayaz has '+ayaz.friends.length+' friends and his best friend is '+ayaz.friends[0])
+
+console.log(ayaz["calcAge"]())
+console.log(ayaz.age)
+console.log(ayaz.age)
+console.log(ayaz.age)
+
+// for loop in javascript
+console.log("hello")
+for(let i=0; i<=10;i++){
+  console.log(`iteration number ${i}`)
+}
+
+// const ayazArray = [
+//   'ayaz',
+//   'khan',
+//   2022-1995,
+//   'developer',
+//   ['nouman','junaid','wajid']
+// ]
+
+// const types = []
+
+for(let i=0;i<ayazArray.length; i++){
+  console.log(ayazArray[i], typeof ayazArray[i])
+  // filling array
+  // types[i]= typeof ayazArray[i]
+
+  types.push(typeof ayazArray[i])
+}
+console.log(types)
+
+// continue and break
+
+for(let i=0;i<ayazArray.length;i++){
+  if(typeof ayazArray[i] !== 'string') continue;
+  console.log(ayazArray[i], typeof ayazArray[i])
+}
+
+// loop inside loop
+
+for(let i=ayazArray.length-1;i>=0;i-- ){
+  console.log(i, ayazArray[i])
+}
+
+for(let exercise=1;exercise<= 3;exercise++){
+  console.log(`--------------- exercise number ${exercise}-----------------`)
+  for(let rep=1;rep<=6;rep++){
+    console.log(`Exercise number ${exercise} Lifting weights repetition ${rep} 🏋️‍♀️`)
+  }
+}
+
+// while loop
+dice = Math.trunc(Math.random() * 6)+1
+
+while(dice!==6){
+  console.log(`you rolled dice ${dice}`)
+  dice = Math.trunc(Math.random() * 6)+1
+  if(dice===6){
+    console.log('while loop is ended')
+  }
+}
